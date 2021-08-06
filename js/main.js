@@ -1,5 +1,5 @@
-
-//Se ingresa la actividad a travez de un prompt.
+/*
+//Se ingresa la actividad atraves de un prompt.
 let actividad = prompt("Ingrese una actividad");
 //Se ingresa un horario a travez de un prompt.
 let horarioActividad = parseInt(prompt("Ingrese el horario de la actividad"));
@@ -17,3 +17,45 @@ if(actividad && horarioActividad != ""){
 } else {
     alert("Debe ingresar algo");
 }
+*/
+
+//Se ingresa la actividad atraves de un prompt.
+let actividad = prompt("Ingrese atividad");
+//Se ingresa el dia a travez de un prompt.
+let diaActividad = prompt("Ingrese un dia");
+//Se ingresa un horario a travez de un prompt.
+let horarioActividad = parseInt(prompt("Ingrese el horario de la actividad"));
+
+//Se abre un ciclo while para repetir un switch(el mismo muestra las actividades guardades en los dias y horarios correspondientes) y se repite todas las veces que sea necesario a menos que no se ingrese nada o se ingrese un esc.
+while(diaActividad == "" || diaActividad != "esc"){
+
+    switch(diaActividad) {
+        case "lunes":
+            alert(`Se añadio la ${actividad} el dia ${diaActividad} a las ${horarioActividad}`);
+            break;
+        case "martes":
+            alert(`Se añadio la ${actividad} el dia ${diaActividad} a las ${horarioActividad}`);
+            break; 
+        case "miercoles":
+            alert(`Se añadio la ${actividad} el dia ${diaActividad} a las ${horarioActividad}`);
+            break; 
+        case "jueves":
+            alert(`Se añadio la ${actividad} el dia ${diaActividad} a las ${horarioActividad}`);
+            break;
+        case "viernes":
+            alert(`Se añadio la ${actividad} el dia ${diaActividad} a las ${horarioActividad}`);
+            break;    
+        case "sabado":
+            alert(`Se añadio la ${actividad} el dia ${diaActividad} a las ${horarioActividad}`);
+            break;
+        case "domingo":
+            alert(`Se añadio la ${actividad} el dia ${diaActividad} a las ${horarioActividad}`);
+            break;
+        default:
+            alert("Usted debe elegir un dia");
+            break;  
+    }
+    diaActividad = prompt("Ingrese un dia");
+}
+
+
